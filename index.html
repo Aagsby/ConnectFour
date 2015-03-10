@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="vendor/bootstrap.css"/>
+    <link rel="stylesheet" href="vendor/normalize.css"/>
+    <link rel="stylesheet" href="vendor/input.css"/>
+    <link rel="stylesheet" href="css/main.css"/>    
+</head>
+<body>
+
+<div id="holder">
+	<div class="section">
+		<div class="container">
+			<div class="col-xs-3"></div>
+			<div class="col-xs-6">
+			<img src="assets/img/logo.png" id="logo">
+
+				<div id="description">
+					<p>Play Connect Four with people all over the world using the magical power of the internet!</p>
+					<p>Select a player to compete with from the list below or start your own game by clicking the button on the bottom.</p>
+				</div>
+
+
+				<div class="col-sm-12">
+					<div id="gameContainer">
+						<h4>Available Players:</h4>	
+						<div id="gameList"></div>
+					</div>
+
+					<form id="enterNameForm">
+						<span class="input input--kuro">
+							<input class="input__field input__field--kuro" type="text" id="input-7" />
+							<label class="input__label input__label--kuro" for="input-7">
+								<span class="input__label-content input__label-content--kuro oldLabel">Enter your name here!</span>
+							</label>
+						</span>
+					</form>
+
+					<form id="startGame">
+						<button type="submit" class="btn--kuro" value="Enter name!">Start new game!</button>
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="section">
+			<div class="container">
+				<div class="col-xs-12" id="boardHolder">
+					<div id="board"></div>
+				</div>
+
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3 player">
+					<h4>Player 1:</h4>
+					<h3 id="playerOneName">Waiting...</h3>
+					<div class="token a"></div>
+					<h4 class="moveMessage">Thinking...</h4>
+				</div>
+
+				<div class="col-xs-1"></div>
+				<div class="col-xs-3 player">
+					<h4>Player 2:</h4>
+					<h3 id="playerTwoName">Waiting...</h3>
+					<div class="token b"></div>
+					<h4 class="moveMessage">Thinking...</h4>
+				</div>
+
+			</div>
+		<div class="darken">
+			<div class="lightBox">
+				<h3 id="message"></h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+<script src="vendor/jquery-2.1.1.js"></script>
+<script src="vendor/input.js"></script>
+<script src="js/config.js"></script>
+<script src="js/model.js"></script>
+<script src="js/main.js"></script>
+
+	<script>
+	</script>
+
+</body>
+</html>

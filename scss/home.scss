@@ -1,0 +1,60 @@
+#logo{
+	width: 100%;
+}
+
+#enterNameForm{
+
+	.input__label--kuro{
+
+		.input__label-content--kuro{
+			float: left;
+			height: 4.5em;
+			overflow: hidden;
+			transition: width 500ms;
+			white-space: nowrap;
+		}
+
+		.newLabel{
+			width: 0%;
+		}	
+	}
+}
+
+#startGame{
+	.btn--kuro{
+		width: 200px;
+		padding: 5px 0px;
+		margin-left: 1em;
+		background: none;
+		border: 4px solid $base;
+		color: $highlight;
+	}
+}
+
+
+#gameContainer{
+	border: 4px solid $base;
+	margin: 25px 0px;
+	margin-left: 1em;
+	padding: 5px;
+	height: 300px;
+	overflow-y: scroll;
+	h4{
+		color: $highlight;
+	}
+
+	#gameList{
+		.openGame{
+			padding: 0px 10px 10px 5px;
+			border-bottom: 1px solid $base;
+
+			&:last-child{
+				border: none;
+			}
+
+			span{
+				cursor: pointer;
+			}
+		}
+	}
+}

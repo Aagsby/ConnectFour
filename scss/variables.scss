@@ -1,0 +1,65 @@
+$a-color: #F7F80C; //player colors
+$b-color: #FA0706;
+$highlight: #BF0692;
+$base: #747981;
+$shadow-color: rgba(0,0,0,0.5);
+
+@mixin token-shadow($color) {
+	-moz-box-shadow: inset 0px 0px 0px 4px $color, inset 0px 0px 4px 5px $shadow-color;
+	-webkit-box-shadow: inset 0px 0px 0px 4px $color, inset 0px 0px 4px 5px $shadow-color;
+	box-shadow: inset 0px 0px 0px 4px $color, inset 0px 0px 4px 5px $shadow-color;
+}
+
+@-webkit-keyframes wiggle{
+	0% {
+		left: -5px;
+	}
+	33% {
+		left: 5px;
+	}
+	66% {
+		left: -5px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+
+@-webkit-keyframes drop{
+	60% {
+		top: 0px;
+	}
+	80% {
+		top: -10px;
+	}
+	90%{
+		top: 0px;
+	}
+	95%{
+		top: -5px;
+	}
+	100% {
+		top: 0px;
+	}
+}
+
+@-webkit-keyframes fall{
+	0% {
+		top: 0px;
+	}
+	40% {
+		top: 120px;
+	}
+	80%{
+		top: 360px;
+	}
+	90%{
+		opacity: 1;
+	}
+	100% {
+		top: 480px;
+		opacity: 0;
+	}
+}
+
